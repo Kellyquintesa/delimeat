@@ -25,21 +25,6 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/order/card": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/order/card.js"
-    ],
-    "/order/cart": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/order/cart.js"
-    ],
-    "/order/payment": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/order/payment.js"
-    ],
     "/order/success": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
