@@ -40,6 +40,16 @@ const Delivery = () => {
     1024: { items: 3 },
   };
 
+  const Banner = () => (
+    <Box paddingTop={10}>
+      <AliceCarousel autoPlay autoPlayInterval="3000" disableButtonsControls>
+        <img src="/images/pizza.png" />
+        <img src="/images/pizza.png" />
+        <img src="/images/pizza.png" />
+      </AliceCarousel>
+    </Box>
+  );
+
   const items = [
     <Box width={100} height={120} borderRadius={50} border="1px solid orange">
       <Box textAlign={"center"} padding={3} fontSize="12px" marginTop={1}>
@@ -158,7 +168,7 @@ const Delivery = () => {
         </Center>
         <Box padding={3}>
           <Text fontSize="lg" marginBottom={2} fontWeight={500}>
-            Big cheese burger
+            Meaty cheese burger
           </Text>
           <Text fontSize="sm">
             No 10 opp lekki phase 1 bridge in sangotedo estate
@@ -206,7 +216,7 @@ const Delivery = () => {
         </Center>
         <Box padding={3}>
           <Text fontSize="lg" marginBottom={2} fontWeight={500}>
-            Big cheese burger
+            Zomato cheese burger
           </Text>
           <Text fontSize="sm">
             No 10 opp lekki phase 1 bridge in sangotedo estate
@@ -230,31 +240,7 @@ const Delivery = () => {
         </Center>
         <Box padding={3}>
           <Text fontSize="lg" marginBottom={2} fontWeight={500}>
-            Big cheese burger
-          </Text>
-          <Text fontSize="sm">
-            No 10 opp lekki phase 1 bridge in sangotedo estate
-          </Text>
-          <Flex paddingTop={3}>
-            <Center display={"flex"}>
-              <AiFillStar /> <Text marginLeft={2}> 4+ </Text>
-            </Center>
-            <Spacer />
-            <Box>
-              <FcLike />
-            </Box>
-          </Flex>
-        </Box>
-      </Box>
-    </Link>,
-    <Link href="/order">
-      <Box width={225} height={280} boxShadow="sm" rounded="md" bg="white">
-        <Center paddingTop={30}>
-          <img src="/images/burger-menu.png" width={200} />
-        </Center>
-        <Box padding={3}>
-          <Text fontSize="lg" marginBottom={2} fontWeight={500}>
-            Big cheese burger
+            Patty cheese burger
           </Text>
           <Text fontSize="sm">
             No 10 opp lekki phase 1 bridge in sangotedo estate
@@ -326,11 +312,12 @@ const Delivery = () => {
     <Box backgroundColor={"#F7F7FB"}>
       <Box height="100%" padding={10}>
         {Header()}
+        {Banner()}
         {headerText()}
         {listCarousel()}
         <Flex marginTop={5} marginBottom={5} alignItems={"center"}>
           <Box fontWeight={700} fontSize="xl">
-            Popular restaurants
+            Favorite Menu
           </Box>
           <Spacer />
           <Box color={"#FE554A"}>View all(29)</Box>

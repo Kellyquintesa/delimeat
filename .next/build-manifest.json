@@ -30,15 +30,15 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/order": [
+    "/order/cart": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/order.js"
+      "static/chunks/pages/order/cart.js"
     ],
-    "/order/delivery": [
+    "/order/payment": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/order/delivery.js"
+      "static/chunks/pages/order/payment.js"
     ]
   },
   "ampFirstPages": []

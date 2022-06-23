@@ -1,26 +1,32 @@
-import { Box, Flex, Spacer, Button, Link, Text, Center } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  Spacer,
+  Button,
+  Link,
+  Text,
+  Center,
+} from "@chakra-ui/react";
 import { BsFillClockFill, BsChevronLeft } from "react-icons/bs";
 import { MdOutlineLocalFireDepartment } from "react-icons/md";
 import { AiFillStar, AiOutlineDown } from "react-icons/ai";
 
-
 const index = () => {
-  
   const orderHeader = () => (
     <Box padding={10}>
       <Flex>
-        <Center w="70px" h="50" >
+        <Center w="70px" h="50">
           <Link href="/order/delivery">
-          <Box fontSize={25} >
-          <BsChevronLeft />{" "}
-          </Box>
+            <Box fontSize={25}>
+              <BsChevronLeft />{" "}
+            </Box>
           </Link>
         </Center>
         <Spacer />
         <Box w="200px" h="50">
           {" "}
           <Center>
-            <Box width="fit-content" >
+            <Box width="fit-content">
               <Text
                 fontSize="xs"
                 alignItems={"center"}
@@ -57,9 +63,7 @@ const index = () => {
         >
           <img src="/images/burger-menu.png" />
         </Center>
-        <Box marginTop={15}>
-         
-        </Box>
+        <Box marginTop={15}></Box>
         <Box marginTop={18}>
           <Text fontSize="2xl" fontWeight={500} textAlign="center">
             Big boys Cheese burger
@@ -106,15 +110,14 @@ const index = () => {
   const cartButton = () => (
     <Box marginTop={15} padding={10}>
       <Link href="/order/cart">
-      <Button
-        borderRadius={20}
-        width="full"
-       
-        color="white"
-        backgroundColor="foodiez.orange"
-      >
-        Add to cart
-      </Button>
+        <Button
+          borderRadius={20}
+          width="full"
+          color="white"
+          backgroundColor="foodiez.orange"
+        >
+          Add to cart
+        </Button>
       </Link>
     </Box>
   );

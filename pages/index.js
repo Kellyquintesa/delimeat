@@ -53,7 +53,7 @@ const Home = () => {
   );
 
   return (
-    <Box backgroundColor={"#F7F7FB"} height="100vh" >
+    <Box backgroundColor={"#F7F7FB"} height="100%">
       <Flex textAlign="center" padding={8}>
         <Box w="70px" h="10" />
         <Spacer />
@@ -62,9 +62,9 @@ const Home = () => {
         </Box>
         <Spacer />
         <Link href={"/order/delivery"}>
-        <Box w="70px" h="10" fontWeight={700} color="foodiez.orange">
-          Skip
-        </Box>
+          <Box w="70px" h="10" fontWeight={700} color="foodiez.orange">
+            Skip
+          </Box>
         </Link>
       </Flex>
       {renderCarousel()}
