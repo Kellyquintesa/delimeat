@@ -43,9 +43,10 @@ const Delivery = () => {
   const Banner = () => (
     <Box paddingTop={10}>
       <AliceCarousel autoPlay autoPlayInterval="3000" disableButtonsControls>
-        <img src="/images/pizza.png" />
-        <img src="/images/pizza.png" />
-        <img src="/images/pizza.png" />
+        <img src="/images/4.png" />
+        <img src="/images/2.png" />
+        <img src="/images/3.png" />
+        <img src="/images/1.png" />
       </AliceCarousel>
     </Box>
   );
